@@ -8,3 +8,5 @@ gem "cucumber"
 gem "rake"
 gem "rspec-rails"
 gem "standard"
+
+gem 'factory_bot', github: 'br4tech/factory_bot'
