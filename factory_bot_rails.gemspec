@@ -3,7 +3,7 @@ require "factory_bot_rails/version"
 
 Gem::Specification.new do |s|
   s.name = "factory_bot_rails"
-  s.version = FactoryBotRails::VERSION
+  s.version = 1.0
   s.authors = ["Joe Ferris"]
   s.email = "jferris@thoughtbot.com"
   s.homepage = "https://github.com/thoughtbot/factory_bot_rails"
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables = []
   s.license = "MIT"
 
-  s.add_runtime_dependency("factory_bot", { git: "https://github.com/br4tech/factory_bot.git", branch: "master" })
+  s.add_runtime_dependency("factory_bot", { git: "https://github.com/br4tech/factory_bot.git", version: "1.0" })  # Substitua "0.1.0" pela versão da sua gem
   s.add_runtime_dependency("railties", ">= 5.0.0")
 
   s.add_development_dependency("sqlite3")
