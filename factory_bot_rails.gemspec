@@ -3,7 +3,7 @@ require "factory_bot_rails/version"
 
 Gem::Specification.new do |s|
   s.name = "factory_bot_rails"
-  s.version = 1.0
+  s.version = FactoryBotRails::VERSION
   s.authors = ["Joe Ferris"]
   s.email = "jferris@thoughtbot.com"
   s.homepage = "https://github.com/thoughtbot/factory_bot_rails"
@@ -15,11 +15,11 @@ Gem::Specification.new do |s|
   s.files = Dir["lib/**/*"] + %w[CONTRIBUTING.md LICENSE NEWS.md README.md]
   s.metadata["changelog_uri"] = "https://github.com/thoughtbot/factory_bot_rails/blob/main/NEWS.md"
   s.require_paths = ["lib"]
-  s.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
+  s.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
   s.executables = []
   s.license = "MIT"
 
-  s.add_runtime_dependency("factory_bot", [{:git=>"https://github.com/br4tech/factory_bot.git", :version=>"1.0"}])  # Substitua "0.1.0" pela versão da sua gem
+  s.add_runtime_dependency("factory_bot", "~> 6.4.0")
   s.add_runtime_dependency("railties", ">= 5.0.0")
 
   s.add_development_dependency("sqlite3")
